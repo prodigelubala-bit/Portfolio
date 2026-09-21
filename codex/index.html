@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Votre Nom</title>
+    <meta
+      name="description"
+      content="Portfolio professionnel de Votre Nom, createur web et designer d'experiences numeriques."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#accueil" aria-label="Retour a l'accueil">
+        <span class="brand-mark">VN</span>
+        <span>Votre Nom</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="#projets">Projets</a>
+        <a href="#competences">Competences</a>
+        <a href="#parcours">Parcours</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="Changer le theme">☾</button>
+    </header>
+
+    <main>
+      <section class="hero section" id="accueil">
+        <div class="hero-copy">
+          <p class="eyebrow">Portfolio personnel</p>
+          <h1>Je cree des sites web clairs, rapides et agreables a utiliser.</h1>
+          <p class="hero-text">
+            Bonjour, je suis <strong>Votre Nom</strong>. Je transforme des idees en interfaces modernes pour les entreprises,
+            les associations et les projets personnels.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projets">Voir mes projets</a>
+            <a class="button secondary" href="#contact">Me contacter</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Portrait stylise">
+          <img src="assets/portrait.svg" alt="Portrait stylise de Votre Nom" />
+          <div class="availability">
+            <span></span>
+            Disponible pour de nouveaux projets
+          </div>
+        </div>
+      </section>
+
+      <section class="section stats" aria-label="Chiffres cles">
+        <div>
+          <strong>12+</strong>
+          <span>projets realises</span>
+        </div>
+        <div>
+          <strong>3</strong>
+          <span>domaines maitrises</span>
+        </div>
+        <div>
+          <strong>100%</strong>
+          <span>approche responsive</span>
+        </div>
+      </section>
+
+      <section class="section split" id="competences">
+        <div>
+          <p class="eyebrow">Competences</p>
+          <h2>Ce que je peux faire pour vous</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <span class="icon">⌘</span>
+            <h3>Creation web</h3>
+            <p>Sites vitrines, pages de presentation, portfolios et interfaces simples a gerer.</p>
+          </article>
+          <article class="skill-card">
+            <span class="icon">▣</span>
+            <h3>Design d'interface</h3>
+            <p>Mise en page lisible, couleurs coherentes, navigation fluide et experience mobile.</p>
+          </article>
+          <article class="skill-card">
+            <span class="icon">↗</span>
+            <h3>Publication</h3>
+            <p>Mise en ligne avec nom de domaine, hebergement, optimisation et suivi de base.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projets">
+        <div class="section-heading">
+          <p class="eyebrow">Projets</p>
+          <h2>Quelques realisations</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-image project-one"></div>
+            <div class="project-content">
+              <p>Site vitrine</p>
+              <h3>Agence locale</h3>
+              <span>HTML · CSS · Responsive</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-image project-two"></div>
+            <div class="project-content">
+              <p>Portfolio</p>
+              <h3>Createur independant</h3>
+              <span>Design · JavaScript · Contact</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-image project-three"></div>
+            <div class="project-content">
+              <p>Page produit</p>
+              <h3>Lancement digital</h3>
+              <span>Landing page · SEO · Mobile</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section timeline-section" id="parcours">
+        <div class="section-heading">
+          <p class="eyebrow">Parcours</p>
+          <h2>Ma facon de travailler</h2>
+        </div>
+        <div class="timeline">
+          <div>
+            <span>01</span>
+            <h3>Comprendre</h3>
+            <p>On clarifie votre objectif, votre public et les pages importantes du site.</p>
+          </div>
+          <div>
+            <span>02</span>
+            <h3>Construire</h3>
+            <p>Je cree une interface propre, adaptee au telephone et facile a faire evoluer.</p>
+          </div>
+          <div>
+            <span>03</span>
+            <h3>Publier</h3>
+            <p>Le site est teste, corrige, puis mis en ligne avec les bons reglages.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Parlons de votre prochain projet.</h2>
+          <p>
+            Je suis ouvert aux collaborations, aux missions courtes et aux projets de creation de site web.
+            Envoyez-moi un message avec votre idee.
+          </p>
+        </div>
+        <form class="contact-form">
+          <label>
+            Nom
+            <input type="text" name="name" placeholder="Votre nom" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="votre@email.com" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Expliquez votre besoin" required></textarea>
+          </label>
+          <button class="button primary" type="submit">Envoyer</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Votre Nom. Tous droits reserves.</p>
+      <div>
+        <a href="mailto:votre@email.com">Email</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
